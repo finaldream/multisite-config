@@ -1,6 +1,6 @@
 {
   "name": "multisite-config",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "multisite configuration module",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://gitlab.com/finaldream/multisite-config.git"
+    "url": "git+https://github.com/finaldream/multisite-config.git"
   },
   "contributors": [
     "Oliver Erdmann <o.erdmann@finaldream.de>",
@@ -16,12 +16,12 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://gitlab.com/finaldream/multisite-config/issues"
+    "url": "https://github.com/finaldream/multisite-config/issues"
   },
   "engines": {
     "node": "> 6.5"
   },
-  "homepage": "https://gitlab.com/finaldream/multisite-config#README",
+  "homepage": "https://github.com/finaldream/multisite-config#README",
   "dependencies": {},
   "devDependencies": {
     "babel-eslint": "^7.2.3",
