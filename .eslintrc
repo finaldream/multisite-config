@@ -1,0 +1,23 @@
+{
+  "parser": "babel-eslint",
+  "extends": "airbnb",
+  "env": {
+    "node": true,
+    "jest": true
+  },
+  "plugins": [
+    "filenames"
+  ],
+  "rules": {
+    "indent": ["error", 4, {"SwitchCase": 1}],
+    "max-len": ["error", 120],
+    "padded-blocks": 0,
+    "strict": 0,
+    "class-methods-use-this": 0,
+    "no-warning-comments": ["warn", {"location": "anywhere"}],
+    "comma-dangle": ["error", {"arrays": "always-multiline", "objects": "always-multiline", "imports": "always-multiline", "exports": "always-multiline", "functions": "ignore"}],
+    "import/prefer-default-export": 0,
+    "import/no-extraneous-dependencies": 0,
+    "filenames/match-exported": [2, "kebab"]
+  }
+}
