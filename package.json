@@ -1,6 +1,6 @@
 {
   "name": "multisite-config",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "multisite configuration module",
   "main": "index.js",
   "scripts": {
