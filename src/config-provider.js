@@ -99,6 +99,11 @@ class ConfigProvider {
      */
     constructor(configPath = './config') {
 
+        this.setConfigPath(configPath);
+    }
+
+    setConfigPath(configPath) {
+
         this.rootConfigPath = (path.isAbsolute(configPath)) ?
             configPath :
             path.resolve(process.env.PWD || __dirname, configPath);
