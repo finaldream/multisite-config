@@ -21,10 +21,21 @@ class Config {
      * @param {string} key
      * @param defaultValue
      */
-    get(key, defaultValue = false) {
+    get(key, defaultValue = null) {
         const value = get(this.config, key);
 
         return (value === undefined) ? defaultValue : value;
+    }
+
+    /**
+     * Set configuration value for key.
+     * Olny changes the in-memory state, does not change config-files
+     * @param {string} key
+     * @param value
+     */
+    set(key, value = null) {
+        const value = set(this.config, key, value);
+        return value;
     }
 
     /**
