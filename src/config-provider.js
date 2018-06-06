@@ -36,8 +36,10 @@ function readConfigFromFiles(configDir, pattern) {
 
             if (fs.statSync(filePath).isFile()) {
                 try {
+                    console.log(filePath);
                     merge(result, (require(filePath) || {})); // eslint-disable-line
                 } catch (error) {
+                    console.error(filePath, error);
                     throw new Error('Can not load config files');
                 }
             }

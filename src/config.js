@@ -4,7 +4,7 @@
  * @author Louis Thai <louis.thai@finaldream.de>
  * @since 05.07.2017
  */
-const { get } = require('lodash');
+const { get, set } = require('lodash');
 
 class Config {
 
@@ -34,7 +34,7 @@ class Config {
      * @param value
      */
     set(key, value = null) {
-        const value = set(this.config, key, value);
+        set(this.config, key, value);
         return value;
     }
 
